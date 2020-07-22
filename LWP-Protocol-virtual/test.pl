@@ -9,11 +9,11 @@ my $tstdir = "file://$ENV{PWD}/t";
 my $relurl = "02-$name.cfg";
 my $tstcfg = "$name $tstdir";
 
-#    open(CFG,">t/02-$name.cfg");
-#    print CFG $tstcfg, "\n";
-#    close(CFG);
+open(CFG,">t/02-$name.cfg");
+print CFG $tstcfg, "\n";
+close(CFG);
 #    
-#    print STDERR join("\n", keys %URI::virtual::), "\n";
+print STDERR join("\n", keys %URI::virtual::), "\n";
 &URI::virtual::lists("./t/02-$name.cfg");
 #    
 my $res;

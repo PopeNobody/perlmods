@@ -1,4 +1,3 @@
-
 use Test::More tests => 4, import => ['!fail'];
 use lib "lib";
 use LWP::Simple;
