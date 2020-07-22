@@ -111,19 +111,26 @@ sub sunlink(@) {
 	return scalar(@_);
 };
 {
-	no warnings 'once';
-	eval join("",<DATA>) unless caller;
+  no warnings 'once';
+  my $code=join("",<DATA>) unless caller;
+  print STDERR "code\n$code\n";
+  eval "$code";
+  warn "$@" if "$@";
 }
 1;
 __DATA__
+
+#I'm pretty sure I wrote this code, but I have no idea what it does.
+
 $\=undef;
 $_=join("",<STDIN>);
 s/\s*;\s*/;/;
 
+my (@subs);
 @subs = grep { length && !/^\s*;\s*$/ } split /^(sub\s+.*?^})\s*;?\s*/ms;
 
 print shift @subs;
 print shift @subs;
-$after = pop @subs;
+my $after = pop @subs;
 $,=";\n";
 print "", sort(@subs), $after;

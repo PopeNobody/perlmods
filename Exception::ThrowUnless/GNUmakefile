@@ -5,7 +5,7 @@ Makefile: Makefile.PL MANIFEST
 	test -e Makefile
 
 MANIFEST:
-	cvsfiles -p | xargs lsfiles | sort > $@.new
+	git ls-files | xargs lsfiles | sort > $@.new
 	mv $@.new $@
 
 %: Makefile
