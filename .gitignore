@@ -1,0 +1,10 @@
+Exception::ThrowUnless/MYMETA.json
+Exception::ThrowUnless/MYMETA.yml
+Exception::ThrowUnless/Makefile
+Exception::ThrowUnless/pm_to_blib
+LWP-Protocol-virtual/MYMETA.json
+LWP-Protocol-virtual/MYMETA.yml
+LWP-Protocol-virtual/Makefile
+LWP-Protocol-virtual/pm_to_blib
+LWP-Protocol-virtual/t/01-loaduri.cfg
+LWP-Protocol-virtual/t/02-resolve.cfg
