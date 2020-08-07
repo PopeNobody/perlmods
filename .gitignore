@@ -9,3 +9,7 @@ LWP-Protocol-virtual/pm_to_blib
 LWP-Protocol-virtual/t/01-loaduri.cfg
 LWP-Protocol-virtual/t/02-resolve.cfg
 **/blib/
+Getopt-WonderBra/MYMETA.json
+Getopt-WonderBra/MYMETA.yml
+Getopt-WonderBra/Makefile
+Getopt-WonderBra/pm_to_blib
